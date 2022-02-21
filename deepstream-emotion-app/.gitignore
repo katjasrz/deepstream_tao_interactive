@@ -1,0 +1,7 @@
+deepstream-emotion-app
+*.so
+*.o
+
+emotion_impl/*.so
+emotion_impl/*.o
+

@@ -118,19 +118,7 @@ cd -
 
 ### Building the app
 
-For Jetson platform:
-
-Copy the `gst-nvdsvideotemplate` plugin source code from DeepStream for servers and workstations package, put it into the folder `/opt/nvidia/deepstream/deepstream/sources/gst-plugins/gst-nvdsvideotemplate` and make it:
-
-```shell
-cd /opt/nvidia/deepstream/deepstream/sources/gst-plugins/gst-nvdsvideotemplate
-make
-cp libnvdsgst_videotemplate.so /opt/nvidia/deepstream/deepstream/lib/gst-plugins/
-rm -rf ~/.cache/gstreamer-1.0/
-cd -
-```
-
-After returning back to the projetc directory, execute:
+In the projetc directory, execute:
 
 ```shell
 make -C ./deepstream-emotion-app/emotion_impl/

@@ -28,12 +28,12 @@ SRCS:= emotion_impl.cpp
 INCS:= $(wildcard *.h)
 LIB:=libnvds_emotion_impl.so
 
-CFLAGS+= -fPIC -DDS_VERSION=\"6.0.0\" \
+CFLAGS+= -fPIC -DDS_VERSION=\"6.1.0\" \
 	 -I /usr/local/cuda/include \
 	 -I /opt/nvidia/deepstream/deepstream/sources/includes -I../includes \
 	 -I /opt/nvidia/deepstream/deepstream/sources/includes/cvcore_headers \
 	 -I /opt/nvidia/deepstream/deepstream/sources/gst-plugins/gst-nvdsvideotemplate/includes \
-	 -I ../../deepstream-faciallandmark-app
+	 -I ../../deepstream-faciallandmark-app \
 
 GST_INSTALL_DIR?=/opt/nvidia/deepstream/deepstream/lib/gst-plugins/
 LIB_INSTALL_DIR?=/opt/nvidia/deepstream/deepstream/lib/

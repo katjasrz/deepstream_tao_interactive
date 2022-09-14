@@ -146,6 +146,8 @@ public:
   /* Pass GST events to the library */
   virtual bool HandleEvent(GstEvent *event);
 
+  virtual char *QueryProperties ();
+
   /* Process Incoming Buffer */
   virtual BufferResult ProcessBuffer(GstBuffer *inbuf);
 
@@ -601,6 +603,13 @@ GstCaps* EmotionAlgorithm::GetCompatibleCaps (GstPadDirection direction,
     }
   }
   return result;
+}
+
+char *EmotionAlgorithm::QueryProperties ()
+{
+    char *str = new char[1000];
+    strcpy (str, "EMOTION LIBRARY PROPERTIES\n \t\t\tcustomlib-props=\"config-file\" : path of the model config file");
+    return str;
 }
 
 bool EmotionAlgorithm::HandleEvent (GstEvent *event)

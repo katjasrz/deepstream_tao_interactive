@@ -1,6 +1,6 @@
 # Interactive Deepstream TAO apps 
 
-I modified a couple of sample Deepstream 6.0 TAO apps from the [deepstream_tao_apps
+I modified a couple of sample Deepstream 6.1 TAO apps from the [deepstream_tao_apps
 ](https://github.com/NVIDIA-AI-IOT/deepstream_tao_apps) repository in order to enable USB camera input support. These are:
 
 * BodyPose2D app
@@ -8,9 +8,9 @@ I modified a couple of sample Deepstream 6.0 TAO apps from the [deepstream_tao_a
 
 ## Prerequisites
 
-* DeepStream SDK 6.0 GA 
+* DeepStream SDK 6.1 and above
 
-Note that I implemneted and tested these apps only on [NVIDIA Jetson](https://developer.nvidia.com/embedded-computing) running JetPack 4.6. In order to run it in a different environment you might need to change some paths in make files according to your system setup. 
+I implemneted and tested these apps on [NVIDIA Jetson](https://developer.nvidia.com/embedded-computing) running JetPack 4.6 and JetPack 5.0. In order to run it in a different environment, you might need to change some paths in make files according to your system setup. 
 
 Clone the project and move to the project directory.
 

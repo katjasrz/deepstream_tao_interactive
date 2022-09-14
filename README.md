@@ -8,7 +8,7 @@ I modified a couple of sample Deepstream 6.0 TAO apps from the [deepstream_tao_a
 
 ## Prerequisites
 
-* DeepStream SDK 6.0 GA and above
+* DeepStream SDK 6.0 GA 
 
 Note that I implemneted and tested these apps only on [NVIDIA Jetson](https://developer.nvidia.com/embedded-computing) running JetPack 4.6. In order to run it in a different environment you might need to change some paths in make files according to your system setup. 
 
